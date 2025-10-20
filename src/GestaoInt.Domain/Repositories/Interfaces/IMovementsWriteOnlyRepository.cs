@@ -1,6 +1,6 @@
 ﻿using GestaoInt.Domain.Entities;
 
-namespace GestaoInt.Domain.Repositories.Interfaces.Repositories;
+namespace GestaoInt.Domain.Repositories.Interfaces;
 
 public interface IMovementsWriteOnlyRepository
 {
