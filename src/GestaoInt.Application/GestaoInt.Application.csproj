@@ -6,4 +6,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="UseCase\Login\DoLogin\" />
+    <Folder Include="UseCase\Movements\Delete\" />
+    <Folder Include="UseCase\Movements\GetAll\" />
+    <Folder Include="UseCase\Movements\GetById\" />
+    <Folder Include="UseCase\Movements\Update\" />
+    <Folder Include="UseCase\Movements\Register\" />
+    <Folder Include="UseCase\Users\ChangePassword\" />
+    <Folder Include="UseCase\Users\Delete\" />
+    <Folder Include="UseCase\Users\Update\" />
+    <Folder Include="UseCase\Users\Register\" />
+    <Folder Include="UseCase\Users\Profile\" />
+  </ItemGroup>
+
 </Project>
