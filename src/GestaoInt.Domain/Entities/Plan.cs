@@ -8,5 +8,4 @@ public class Plan
     public DateTime? CreatedAt { get; set; }
     public bool IsActived { get; set; }
     public Module Module { get; set; }
-    public Co
 }

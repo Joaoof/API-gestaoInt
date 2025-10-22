@@ -88,7 +88,4 @@ public class MovementRepository: IMovementsReadOnlyRepository, IMovementsWriteOn
             .OrderBy(m => m.Date)
             .ThenBy(m => m.Value);
     }
-
-    public async Task<>
-
 }

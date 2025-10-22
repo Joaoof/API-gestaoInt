@@ -12,12 +12,22 @@
     <Folder Include="UseCase\Movements\GetAll\" />
     <Folder Include="UseCase\Movements\GetById\" />
     <Folder Include="UseCase\Movements\Update\" />
-    <Folder Include="UseCase\Movements\Register\" />
     <Folder Include="UseCase\Users\ChangePassword\" />
     <Folder Include="UseCase\Users\Delete\" />
     <Folder Include="UseCase\Users\Update\" />
     <Folder Include="UseCase\Users\Register\" />
     <Folder Include="UseCase\Users\Profile\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GestaoInt.Communication\GestaoInt.Communication.csproj" />
+    <ProjectReference Include="..\GestaoInt.Domain\GestaoInt.Domain.csproj" />
+    <ProjectReference Include="..\GestaoInt.Exception\GestaoInt.Exception.csproj" />
   </ItemGroup>
 
 </Project>

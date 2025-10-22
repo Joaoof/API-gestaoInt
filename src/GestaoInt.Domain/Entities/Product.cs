@@ -7,7 +7,7 @@
         public int Quantity { get; set; }
         public decimal CostPrice { get; set; }
         public decimal SalePrice { get; set; }
-        public ProductStatus Status { get; set; }
+        //public ProductStatus Status { get; set; }
         public string CategoryId { get; set; }
         public string SupplierId { get; set; }
         public string Description { get; set; }
