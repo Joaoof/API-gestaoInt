@@ -11,4 +11,6 @@ public class User
     public string[]? Permissions { get; set; }
     public bool IsActive { get; set; }
     public DateTime Created { get; set; }
+
+    public Guid UserIdentifier { get; set; }
 }
