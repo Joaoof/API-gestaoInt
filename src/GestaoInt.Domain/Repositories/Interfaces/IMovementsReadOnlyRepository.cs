@@ -4,5 +4,5 @@ namespace GestaoInt.Domain.Repositories.Interfaces;
 
 public interface IMovementsReadOnlyRepository
 {
-    Task<Movement?> GetById(User user, Guid id);
+    //Task<Movement?> GetById(User user, Guid id);
 }

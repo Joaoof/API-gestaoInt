@@ -120,6 +120,12 @@
   <data name="CATEGORY_TYPE_INVALID" xml:space="preserve">
     <value>O tipo de categoria é inválido</value>
   </data>
+  <data name="DESCRIPTION_NOT_EMPTY" xml:space="preserve">
+    <value>A descrição não pode ser vazia</value>
+  </data>
+  <data name="DESCRIPTION_NOT_NULL" xml:space="preserve">
+    <value>A descrição não pode ser nula</value>
+  </data>
   <data name="MOVEMENT_CANNOT_FOR_THE_FUTURE" xml:space="preserve">
     <value>A movimentação não pode ser para o futuro</value>
   </data>

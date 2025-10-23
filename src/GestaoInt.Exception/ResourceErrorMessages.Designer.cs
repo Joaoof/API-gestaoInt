@@ -70,6 +70,24 @@ namespace GestaoInt.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The description is cannot be empty.
+        /// </summary>
+        public static string DESCRIPTION_NOT_EMPTY {
+            get {
+                return ResourceManager.GetString("DESCRIPTION_NOT_EMPTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The description is not null.
+        /// </summary>
+        public static string DESCRIPTION_NOT_NULL {
+            get {
+                return ResourceManager.GetString("DESCRIPTION_NOT_NULL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Movement cannot be for the future.
         /// </summary>
         public static string MOVEMENT_CANNOT_FOR_THE_FUTURE {

@@ -20,6 +20,6 @@ public class AutoMapping: Profile
 
     private void EntityToResponseToEntity()
     {
-        CreateMap<ResponseRegisterdMovementJson, Movement>();
+        CreateMap<Movement, ResponseRegisterdMovementJson>();
     }
 }
