@@ -41,12 +41,66 @@ namespace GestaoInt.Infrastructure.Migrations
                     b.Property<int>("Type")
                         .HasColumnType("integer");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
                     b.Property<decimal>("Value")
                         .HasColumnType("numeric");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("Movements");
+                });
+
+            modelBuilder.Entity("GestaoInt.Domain.Entities.User", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("CompanyId")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("text");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("text");
+
+                    b.PrimitiveCollection<string[]>("Permissions")
+                        .HasColumnType("text[]");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("UserIdentifier")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("GestaoInt.Domain.Entities.Movement", b =>
+                {
+                    b.HasOne("GestaoInt.Domain.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

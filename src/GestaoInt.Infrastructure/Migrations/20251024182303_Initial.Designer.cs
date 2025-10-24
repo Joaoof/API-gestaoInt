@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace GestaoInt.Infrastructure.Migrations
 {
     [DbContext(typeof(GestaoIntDbContext))]
-    [Migration("20251022124000_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20251024182303_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,6 +36,10 @@ namespace GestaoInt.Infrastructure.Migrations
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<int>("Type")
                         .HasColumnType("integer");
@@ -83,9 +87,12 @@ namespace GestaoInt.Infrastructure.Migrations
                     b.Property<string>("Role")
                         .HasColumnType("text");
 
+                    b.Property<Guid>("UserIdentifier")
+                        .HasColumnType("uuid");
+
                     b.HasKey("Id");
 
-                    b.ToTable("User");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("GestaoInt.Domain.Entities.Movement", b =>

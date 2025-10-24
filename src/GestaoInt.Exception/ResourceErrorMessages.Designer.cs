@@ -88,11 +88,65 @@ namespace GestaoInt.Exception {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The e-mail is already registered.
+        /// </summary>
+        public static string EMAIL_ALREADY_REGISTERED {
+            get {
+                return ResourceManager.GetString("EMAIL_ALREADY_REGISTERED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The e-mail is not empty.
+        /// </summary>
+        public static string EMAIL_EMPTY {
+            get {
+                return ResourceManager.GetString("EMAIL_EMPTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The e-mail is invalid .
+        /// </summary>
+        public static string EMAIL_INVALID {
+            get {
+                return ResourceManager.GetString("EMAIL_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a invalid credentials.
+        /// </summary>
+        public static string EMAIL_OR_PASSWORD_INVALID {
+            get {
+                return ResourceManager.GetString("EMAIL_OR_PASSWORD_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The password is not valid .
+        /// </summary>
+        public static string INVALID_PASSWORD {
+            get {
+                return ResourceManager.GetString("INVALID_PASSWORD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a Movement cannot be for the future.
         /// </summary>
         public static string MOVEMENT_CANNOT_FOR_THE_FUTURE {
             get {
                 return ResourceManager.GetString("MOVEMENT_CANNOT_FOR_THE_FUTURE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The name is not empty.
+        /// </summary>
+        public static string NAME_EMPTY {
+            get {
+                return ResourceManager.GetString("NAME_EMPTY", resourceCulture);
             }
         }
         

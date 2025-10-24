@@ -4,7 +4,7 @@ namespace GestaoInt.Domain.Repositories.Interfaces;
 
 public interface IMovementsWriteOnlyRepository
 {
-    Task Add(Movement movement);
+    Task Add(Entities.Movement movement);
     Task Delete(Guid id);
 
 }

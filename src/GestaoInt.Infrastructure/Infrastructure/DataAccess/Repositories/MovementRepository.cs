@@ -1,6 +1,7 @@
 ﻿using GestaoInt.Domain.Entities;
 using GestaoInt.Domain.Enums;
 using GestaoInt.Domain.Repositories.Interfaces;
+using GestaoInt.Domain.Repositories.Movement;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 

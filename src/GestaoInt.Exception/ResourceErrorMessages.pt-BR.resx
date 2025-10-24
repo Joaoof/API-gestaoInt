@@ -126,8 +126,26 @@
   <data name="DESCRIPTION_NOT_NULL" xml:space="preserve">
     <value>A descrição não pode ser nula</value>
   </data>
+  <data name="EMAIL_ALREADY_REGISTERED" xml:space="preserve">
+    <value>O e-mail está registrado</value>
+  </data>
+  <data name="EMAIL_EMPTY" xml:space="preserve">
+    <value>O e-mail do usuário não pode ser vazio</value>
+  </data>
+  <data name="EMAIL_INVALID" xml:space="preserve">
+    <value>O e-mail é inválido</value>
+  </data>
+  <data name="EMAIL_OR_PASSWORD_INVALID" xml:space="preserve">
+    <value>Credências Inválidas</value>
+  </data>
+  <data name="INVALID_PASSWORD" xml:space="preserve">
+    <value>A senha utilizada não é válida</value>
+  </data>
   <data name="MOVEMENT_CANNOT_FOR_THE_FUTURE" xml:space="preserve">
     <value>A movimentação não pode ser para o futuro</value>
+  </data>
+  <data name="NAME_EMPTY" xml:space="preserve">
+    <value>O nome do usuário não pode ser vazio</value>
   </data>
   <data name="TYPE_INVALID" xml:space="preserve">
     <value>O tipo é inválido</value>

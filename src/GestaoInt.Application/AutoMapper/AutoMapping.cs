@@ -16,10 +16,12 @@ public class AutoMapping: Profile
     private void RequestToEntity()
     {
         CreateMap<RequestMovementJson, Movement>();
+        CreateMap<RequestUserJson, User>();
     }
 
     private void EntityToResponseToEntity()
     {
         CreateMap<Movement, ResponseRegisterdMovementJson>();
+        CreateMap<User, ResponseRegisteredUserJson>();
     }
 }

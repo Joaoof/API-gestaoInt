@@ -6,12 +6,12 @@ using System.Security.Claims;
 
 namespace GestaoInt.Infrastructure.Security.Tokens;
 
-internal class JwtTokenGenerator : IAccessTokenGenerator
+internal class AccessTokenGenerator : IAccessTokenGenerator
 {
     private readonly uint _expirationTimeMinutes;
     private readonly string _signingKey;
 
-    public JwtTokenGenerator(uint expirationTimeMinutes, string signingKey)
+    public AccessTokenGenerator(uint expirationTimeMinutes, string signingKey)
     {
         _expirationTimeMinutes = expirationTimeMinutes;
         _signingKey = signingKey;

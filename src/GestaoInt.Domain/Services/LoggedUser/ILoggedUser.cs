@@ -6,4 +6,3 @@ public interface ILoggedUser
 {
     Task<User> Get();
 }
-}
