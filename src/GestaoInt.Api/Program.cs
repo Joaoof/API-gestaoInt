@@ -68,7 +68,7 @@ builder.Services.AddAuthentication(config =>
         ClockSkew = new TimeSpan(0),
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey!))
     };
-});
+});0
 
 var app = builder.Build();
 
@@ -78,6 +78,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
 app.UseMiddleware<CultureMiddleware>();
 
