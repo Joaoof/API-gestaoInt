@@ -185,8 +185,8 @@ dotnet test
 
 **João**
 💼 Desenvolvedor Full Stack • 🚀 Explorador de tecnologia e eficiência
-📧 [[joao@email.com](mailto:joaodeus400@gmail.com)]
-🔗 [LinkedIn](https://www.linkedin.com/in/jo-aoof/) *(exemplo)*
+📧 [[joaodeus400@gmail.com](mailto:joaodeus400@gmail.com)]
+🔗 [LinkedIn](https://www.linkedin.com/in/jo-aoof/)
 
 ---
 
