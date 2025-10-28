@@ -17,8 +17,8 @@ public class RegisterUserUseCase: IRegisterUserUseCase
     private readonly IUserReadOnlyRepository _userReadOnlyRepository;
     private readonly IMapper _mapper;
     private readonly IUnitOfWork _unitOfWork;
-    private IPasswordEncripter _passwordEncripter;
-    private IAccessTokenGenerator _accessTokenGenerator;
+    private readonly IPasswordEncripter _passwordEncripter;
+    private readonly IAccessTokenGenerator _accessTokenGenerator;
 
     public RegisterUserUseCase(IUserWriteOnlyRepository userWriteOnlyRepository, IMapper mapper, IUnitOfWork unitOfWork, IPasswordEncripter passwordEncripter, IAccessTokenGenerator accessTokenGenerator, IUserReadOnlyRepository userReadOnlyRepository)
     {
@@ -37,6 +37,8 @@ public class RegisterUserUseCase: IRegisterUserUseCase
         var user = _mapper.Map<Domain.Entities.User>(request);
         user.Password = _passwordEncripter.Encrypt(request.Password);
         user.UserIdentifier = Guid.NewGuid();
+        user.Role = "ADMIN";
+        user.Created = DateTime.UtcNow;
 
         await _userWriteOnlyRepository.Add(user);
 
